@@ -10,7 +10,7 @@ body {
   margin: 0;
 }
 body {
-  font-family: "Playwrite DE Grund Guides", cursive;
+  font-family: "Newsreader", serif;
   font-weight: 400;
   font-style: normal;
   display: flex;
@@ -22,6 +22,7 @@ body {
 }
 
 /*  font-family: "Newsreader", serif;
+font-family: "Playwrite DE Grund Guides", cursive;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal; */
@@ -42,7 +43,7 @@ h1 {
   height: 100%;
   width: 100%;
   padding: 20px;
-   background: linear-gradient(to bottom right, #85f6e3a2, #fcb69f);
+  background: linear-gradient(to bottom right, #85f6e3a2, #fcb69f);
 }
 
 .displayCalculator {
@@ -152,23 +153,24 @@ h1 {
   grid-area: bOff;
 }
 
-
-
-
-/* ✅ ESTADO NORMAL DE LOS BOTONES (ON) */
-
-
 .calculatorContainer.off button:disabled {
   background: #c8c6c6;
   color: #666;
   opacity: 0.6;
   cursor: not-allowed;
   text-decoration: line-through;
- 
+}
+
+.calculatorContainer.off .displayCalculator {
+  background-color: #222;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: none;
+  box-shadow: none;
 }
 
 .calculatorContainer.off button:enabled {
-   background: linear-gradient(to bottom right, #15ff00, #fcb69f);
+  background: linear-gradient(to bottom right, #15ff00, #fcb69f);
   color: #1a1a1a;
   transition: 0.2s;
   cursor: pointer;
