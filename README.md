@@ -39,5 +39,4 @@ A calculator built with pure JavaScript (without using `eval()`), capable of per
 ---
 
 ## 👨‍💻 Author
-
 Moises Oña © 2025 — All rights reserved.

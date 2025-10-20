@@ -82,7 +82,6 @@ find . -name ".DS_Store" -print0 | xargs -0 git rm --cached
 git commit -m "remove .DS_Store"
 git push
 `
-
 const operatorCalculator = (array) => {
 
     let operatorsToken = ["+", "-", "*", "/"]
