@@ -1,27 +1,28 @@
 # 🧮 JS Calculator
 
-Calculadora creada en JavaScript puro (sin `eval()`), capaz de realizar operaciones básicas respetando jerarquía matemática (*, /, +, -).
+A calculator built with pure JavaScript (without using `eval()`), capable of performing basic operations while respecting operator precedence (*, /, +, -).
 
 ---
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-✔ Encendido y apagado (ON / OFF)  
-✔ Botones DEL (borrar) y AC (reset total)  
-✔ Operaciones con prioridad matemática  
-✔ Diseño responsive con CSS / SCSS (sin frameworks)
+✔ Power ON / OFF functionality  
+✔ DEL (delete last digit) and AC (clear all) buttons  
+✔ Mathematical operation precedence supported  
+✔ Designed with CSS / SCSS (no frameworks used)  
+✔ Fully functional with Vanilla JavaScript
 
 ---
 
-## 🛠️ Tecnologías usadas
+## 🛠️ Technologies Used
 
 - **HTML**
 - **CSS / SCSS**
-- **JavaScript**
+- **JavaScript (Vanilla)**
 
 ---
 
-## ⚡ Vista previa
+## ⚡ Preview
 
 ### 🔵 ON
 ![ON](./assets/on.png)
@@ -29,14 +30,14 @@ Calculadora creada en JavaScript puro (sin `eval()`), capaz de realizar operacio
 ### 🔴 OFF
 ![OFF](./assets/off.png)
 
-### ➕ Operaciones
+### ➕ Operations
 ![OPERATIONS](./assets/operations.png)
 
-### ✅ Resultado
+### ✅ Result
 ![RESULT](./assets/result.png)
 
 ---
 
-## 📌 Autor
+## 👨‍💻 Author
 
-Moises Oña © 2025 — Todos los derechos reservados.
+Moises Oña © 2025 — All rights reserved.
