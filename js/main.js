@@ -83,7 +83,6 @@ git commit -m "remove .DS_Store"
 git push
 `
 
-
 const operatorCalculator = (array) => {
 
     let operatorsToken = ["+", "-", "*", "/"]
