@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Newsreader:opsz,wght@6..72,200&family=Playwrite+DE+Grund+Guides&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: "Playwrite DE Grund Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
+
+  background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+}
+
+/*  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal; */
+
+h1 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.calculatorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff7f0; /* blanco rosado muy suave */
+}
+
+.displayCalculator {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+
+  border: 1px solid rgba(0, 0, 0, 0.126);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.buttonSty {
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2rem;
+
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom right,
+    #f6cd85,
+    #fcb69f
+  ); /* naranja claro → rosa pastel */
+  color: #1a1a1a;
+} /* Efecto hover para feedback visual */
+.buttonSty:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.508);
+}
+
+.buttonContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    " display display display display display"
+    "b7 b8 b9 bOn bOff"
+    "b4 b5 b6 bX bDiv"
+    "b1 b2 b3 bPlus bMinus"
+    "b0 bDel bAc bEqual bEqual";
+  gap: 10px;
+}
+
+.display {
+  grid-area: display;
+}
+.b1 {
+  grid-area: b1;
+}
+.b2 {
+  grid-area: b2;
+}
+.b3 {
+  grid-area: b3;
+}
+.b4 {
+  grid-area: b4;
+}
+.b5 {
+  grid-area: b5;
+}
+.b6 {
+  grid-area: b6;
+}
+.b7 {
+  grid-area: b7;
+}
+.b8 {
+  grid-area: b8;
+}
+.b9 {
+  grid-area: b9;
+}
+.b0 {
+  grid-area: b0;
+}
+.bPlus {
+  grid-area: bPlus;
+}
+.bMinus {
+  grid-area: bMinus;
+}
+.bX {
+  grid-area: bX;
+}
+.bDiv {
+  grid-area: bDiv;
+}
+.bDel {
+  grid-area: bDel;
+}
+.bAc {
+  grid-area: bAc;
+}
+.bEqual {
+  grid-area: bEqual;
+}
+.bOn {
+  grid-area: bOn;
+}
+.bOff {
+  grid-area: bOff;
+}
