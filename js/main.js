@@ -23,54 +23,66 @@ let bequal = document.getElementById("bequal")
 let boff = document.getElementById("boff")
 let bon = document.getElementById("bon")
 
-// let displayContainer = document.getElementById("displayContainer")
+    // let displayContainer = document.getElementById("displayContainer")
 
-// const slideArray = (arrayBase, operator) => {
+    // const slideArray = (arrayBase, operator) => {
 
-//     let checkIndex = arrayBase.indexOf(operator)
+    //     let checkIndex = arrayBase.indexOf(operator)
 
-//     let value1 = arrayBase.slice(0, checkIndex)
-//     let value2 = arrayBase.slice(checkIndex + 1, arrayBase.length)
+    //     let value1 = arrayBase.slice(0, checkIndex)
+    //     let value2 = arrayBase.slice(checkIndex + 1, arrayBase.length)
 
-//     let valueTotal = Number(value1.join("")) + Number(value2.join(""))
-//     displayContainer.innerHTML = valueTotal
-//     number.push(valueTotal)
-//     return valueTotal
+    //     let valueTotal = Number(value1.join("")) + Number(value2.join(""))
+    //     displayContainer.innerHTML = valueTotal
+    //     number.push(valueTotal)
+    //     return valueTotal
 
-// }
+    // }
 
-// const moreDates = (array, operator) => {
-//     let count = ""
-//     let newContainer = []
+    // const moreDates = (array, operator) => {
+    //     let count = ""
+    //     let newContainer = []
 
-//     array.forEach(num => {
+    //     array.forEach(num => {
 
-//         if (num === operator) {
-//             newContainer.push(Number(count))
-//             console.log(count)
-//             count = ""
-//         } else {
-//             console.log(num)
-//             count += num
-//         }
-
-
-//     })
-//     newContainer.push(Number(count))
+    //         if (num === operator) {
+    //             newContainer.push(Number(count))
+    //             console.log(count)
+    //             count = ""
+    //         } else {
+    //             console.log(num)
+    //             count += num
+    //         }
 
 
-//     let totalNum = newContainer.reduce((countF, numF) => countF + numF, 0)
-//     displayContainer.innerHTML = totalNum
-//     number = []
-
-//     number.push(totalNum)
-//     newContainer = []
-//     console.log(totalNum)
-
-//     return totalNum
+    //     })
+    //     newContainer.push(Number(count))
 
 
-// }
+    //     let totalNum = newContainer.reduce((countF, numF) => countF + numF, 0)
+    //     displayContainer.innerHTML = totalNum
+    //     number = []
+
+    //     number.push(totalNum)
+    //     newContainer = []
+    //     console.log(totalNum)
+
+    //     return totalNum
+
+
+    // }
+
+    `
+# Borra SOLO del índice de git (no del disco)
+git rm --cached .DS_Store
+
+# Si hay varios en subcarpetas:
+find . -name ".DS_Store" -print0 | xargs -0 git rm --cached
+
+git commit -m "remove .DS_Store"
+git push
+`
+
 
 const operatorCalculator = (array) => {
 
@@ -208,7 +220,7 @@ bdel.onclick = () => {
     } else {
         number.pop()
         displayContainer.innerHTML = number.join("")
-          
+
 
     }
 }
