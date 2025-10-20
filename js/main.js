@@ -159,10 +159,29 @@ let number = []
 
 boff.onclick = () => {
     displayContainer.innerHTML = "OFF"
+
+    let allButtons = document.querySelectorAll("button")
+    allButtons.forEach(btn => {
+        if (btn.id !== "bon") {
+            btn.disabled = true
+            console.log(btn.id)
+        }
+    })
+    number.length = 0
+    document.querySelector(".calculatorContainer").classList.add("off")
+
 }
 
 bon.onclick = () => {
-    displayContainer.innerHTML = "ON"
+    displayContainer.innerHTML = "Welcome Back"
+    let allButtons = document.querySelectorAll("button")
+    allButtons.forEach(btn => {
+        btn.disabled = false
+    })
+    number.length = 0
+
+    document.querySelector(".calculatorContainer").classList.remove("off")
+
 }
 
 bac.onclick = () => {
@@ -175,17 +194,22 @@ bdel.onclick = () => {
 
     if (number.length === 0) return
 
-    if (number.length === 1) { 
+    if (number.length === 1) {
         let value = String(number[0])
-        value = value.slice(0, -1);    
+        value = value.slice(0, -1);
 
         if (value === "") {
-            number = []              
+            number = []
             displayContainer.innerHTML = ""
         } else {
-            number[0] = value       
+            number[0] = value
             displayContainer.innerHTML = value
         }
+    } else {
+        number.pop()
+        displayContainer.innerHTML = number.join("")
+          
+
     }
 }
 
@@ -200,8 +224,6 @@ b1.onclick = () => {
     let value = b1.value
     number.push(value)
     displayContainer.innerHTML = number.join("")
-
-
 }
 
 b2.onclick = () => {

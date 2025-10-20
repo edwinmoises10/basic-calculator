@@ -18,7 +18,7 @@ body {
   justify-content: center; /* centra horizontalmente */
   align-items: center; /* centra verticalmente */
 
-  background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+  background: linear-gradient(to bottom right, #ffecd2, #6f76a67d);
 }
 
 /*  font-family: "Newsreader", serif;
@@ -42,7 +42,7 @@ h1 {
   height: 100%;
   width: 100%;
   padding: 20px;
-  background-color: #fff7f0; /* blanco rosado muy suave */
+   background: linear-gradient(to bottom right, #85f6e3a2, #fcb69f);
 }
 
 .displayCalculator {
@@ -69,8 +69,8 @@ h1 {
   border-radius: 10px;
   background: linear-gradient(
     to bottom right,
-    #f6cd85,
-    #fcb69f
+    #0d0d0d22,
+    #0000002f
   ); /* naranja claro → rosa pastel */
   color: #1a1a1a;
 } /* Efecto hover para feedback visual */
@@ -83,7 +83,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-areas:
-    " display display display display display"
+    "display display display display display"
     "b7 b8 b9 bOn bOff"
     "b4 b5 b6 bX bDiv"
     "b1 b2 b3 bPlus bMinus"
@@ -150,4 +150,26 @@ h1 {
 }
 .bOff {
   grid-area: bOff;
+}
+
+
+
+
+/* ✅ ESTADO NORMAL DE LOS BOTONES (ON) */
+
+
+.calculatorContainer.off button:disabled {
+  background: #c8c6c6;
+  color: #666;
+  opacity: 0.6;
+  cursor: not-allowed;
+  text-decoration: line-through;
+ 
+}
+
+.calculatorContainer.off button:enabled {
+   background: linear-gradient(to bottom right, #15ff00, #fcb69f);
+  color: #1a1a1a;
+  transition: 0.2s;
+  cursor: pointer;
 }
