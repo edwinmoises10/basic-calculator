@@ -23,7 +23,7 @@ let bequal = document.getElementById("bequal")
 let boff = document.getElementById("boff")
 let bon = document.getElementById("bon")
 
-    // let displayContainer = document.getElementById("displayContainer")
+let displayContainer = document.getElementById("displayContainer")
 
     // const slideArray = (arrayBase, operator) => {
 
@@ -72,16 +72,16 @@ let bon = document.getElementById("bon")
 
     // }
 
-    `
-# Borra SOLO del índice de git (no del disco)
-git rm --cached .DS_Store
+    
+// # Borra SOLO del índice de git (no del disco)
+// git rm --cached .DS_Store
 
-# Si hay varios en subcarpetas:
-find . -name ".DS_Store" -print0 | xargs -0 git rm --cached
+// # Si hay varios en subcarpetas:
+// find . -name ".DS_Store" -print0 | xargs -0 git rm --cached
 
-git commit -m "remove .DS_Store"
-git push
-`
+// git commit -m "remove .DS_Store"
+// git push
+
 const operatorCalculator = (array) => {
 
     let operatorsToken = ["+", "-", "*", "/"]
